@@ -1,0 +1,91 @@
+# ---- 系统 / 编辑器 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# ---- 依赖 / 构建产物 ----
+node_modules/
+dist/
+build/
+out/
+target/
+*.log
+
+# ---- Python（仿真 / 日志分析）----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+*.ipynb_checkpoints/
+data/raw/
+
+# ---- 飞控 / 仿真常见产物 ----
+*.ulg
+*.bin
+*.tlog
+*.bag
+*.csv.bak
+logs/
+*.mp4
+*.mov
+
+# ---- 机械 / 电路大文件（建议用 Git LFS 或网盘）----
+*.step
+*.stp
+*.SLDPRT
+*.sldasm
+*.f3d
+*.zip
+
+# ---- 环境变量 / 密钥（切勿提交）----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- 临时文件 ----
+*.tmp
+*.bak
+
+# ---- Keil MDK / ARMCC（STM32 遥控器与 OLED 工程）----
+# 构建输出目录
+Objects/
+Listings/
+build/
+DebugConfig/
+# 编译中间件与产物
+*.o
+*.d
+*.crf
+*.axf
+*.map
+*.lnp
+*.dep
+*.lst
+*.hex
+*.elf
+*.build_log.htm
+# Keil 生成的列表 / 报告
+*.htm
+# 个人环境与调试器设置（每台机器不同）
+*.uvguix.*
+*.uvopt
+*.uvoptx
+*.uvproj.saved_uv4
+JLinkLog.txt
+JLinkSettings.ini
+build*.txt
+
+*.sct
+*.iex
+
+# third-party driver packages (Silicon Labs CP210x, ~800 KB) stay out of the repo
+*.cab
+F3/cp210x-driver/extracted/
+install.log
